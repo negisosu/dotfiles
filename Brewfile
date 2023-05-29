@@ -8,6 +8,7 @@ tap "homebrew/cask-versions" # 異なるバージョンの cask
 cask "visual-studio-code" # 多機能テキストエディタ
 cask "mactex-no-gui"# TeX Live (GUI アプリなし)
 cask "drawio" # Applicaiton for Diagrams.net
+cask "google-drive"
 
 ### Homebrew
 brew "mas" # Mac App Store command-line interface
