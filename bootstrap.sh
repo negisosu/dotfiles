@@ -13,6 +13,24 @@ UNAME=`uname -m`
 # dotfiles の場所を設定
 DOTPATH=$HOME/dotfiles
 
+# このフォルダの取り扱い
+if [ ! -d "$DOTPATH" ]; then
+  # 初回実行時はリポジトリがないので、clone してくる
+  echo "Cloning dotfiles.git ..."
+  git clone https://tatsum22020@bitbucket.org/tatsum22020/dotfiles.git "$DOTPATH"
+else
+  # すでにフォルダがある時はそのことを表示
+  echo "$DOTPATH already downloaded."
+fi
+
+cd "$DOTPATH"
+# ここにある dotfiles をホームに展開 (.git, .DS_Store は除外。他に除外するものが増えたらここに追記)
+echo "Deploying dotfiles ..."
+for file in .??*; do
+    [[ "$file" = ".git" ]] && continue
+    [[ "$file" = ".DS_Store" ]] && continue
+    ln -fvns "$DOTPATH/$file" "$HOME/$file"
+done
 # 入っていなければ、コマンドライン・デベロッパツールをインストール
 xcode-select -p 1>/dev/null || {
   echo "Installing Command line tools ..."
