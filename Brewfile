@@ -9,6 +9,7 @@ cask "visual-studio-code" # 多機能テキストエディタ
 cask "mactex-no-gui"# TeX Live (GUI アプリなし)
 cask "drawio" # Applicaiton for Diagrams.net
 cask "google-drive"
+cask "sourcetree"
 
 ### Homebrew
 brew "mas" # Mac App Store command-line interface
@@ -16,5 +17,6 @@ brew "python" # Python 言語
 brew "python-tk" # Python interface to Tcl/Tkcask
 brew "rbenv"
 brew "ruby-build"
-brew "sqlite3" 
+brew "sqlite3"
+brew "git"
 ### mas
