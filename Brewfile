@@ -19,4 +19,6 @@ brew "rbenv"
 brew "ruby-build"
 brew "sqlite3"
 brew "git"
+brew "tree"
+brew "yarn"
 ### mas
