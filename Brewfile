@@ -10,6 +10,7 @@ cask "mactex-no-gui"# TeX Live (GUI アプリなし)
 cask "drawio" # Applicaiton for Diagrams.net
 cask "google-drive"
 cask "sourcetree"
+cask "utm"
 
 ### Homebrew
 brew "mas" # Mac App Store command-line interface
