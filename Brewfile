@@ -11,6 +11,7 @@ cask "drawio" # Applicaiton for Diagrams.net
 cask "google-drive"
 cask "sourcetree"
 cask "utm"
+cask "google-chrome"
 
 ### Homebrew
 brew "mas" # Mac App Store command-line interface
@@ -22,4 +23,6 @@ brew "sqlite3"
 brew "git"
 brew "tree"
 brew "yarn"
+brew "mariadb"
+brew "inetutils"
 ### mas
