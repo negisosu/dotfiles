@@ -12,6 +12,8 @@ cask "google-drive"
 cask "sourcetree"
 cask "utm"
 cask "google-chrome"
+cask "raycast"
+cask "rubymine"
 
 ### Homebrew
 brew "mas" # Mac App Store command-line interface
@@ -25,4 +27,6 @@ brew "tree"
 brew "yarn"
 brew "mariadb"
 brew "inetutils"
+brew "rbenv"
+brew "ruby-build"
 ### mas
