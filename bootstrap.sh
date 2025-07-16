@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 # エラーがあったらそこで即終了、設定していない変数を使ったらエラーにする
@@ -51,7 +50,10 @@ if ! command -v brew > /dev/null 2>&1; then
   echo "Installing homebrew ..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
+# .zprofile に重複しないように追記
+if ! grep -qxF 'eval "$(/opt/homebrew/bin/brew shellenv)"' ~/.zprofile; then
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # homebrew, cask and mas
 brew bundle -v

@@ -1,32 +1,27 @@
+# frozen_string_literal: true
+
 ### tap
-tap "homebrew/bundle" # brew bundle コマンド
-tap "homebrew/cask" # GUI アプリのインストール
-tap "homebrew/services" # brew service コマンド
-tap "homebrew/cask-fonts" # フォント
-tap "homebrew/cask-versions" # 異なるバージョンの cask
+tap 'homebrew/bundle' # brew bundle コマンド
+tap 'homebrew/services' # brew service コマンド
+tap 'homebrew/cask-fonts' # フォント
+tap 'homebrew/cask-versions' # 異なるバージョンの cask
+
 ### Casks
-cask "visual-studio-code" # 多機能テキストエディタ
-cask "mactex-no-gui"# TeX Live (GUI アプリなし)
-cask "drawio" # Applicaiton for Diagrams.net
-cask "google-drive"
-cask "sourcetree"
-cask "utm"
-cask "google-chrome"
-cask "raycast"
-cask "rubymine"
+cask 'mactex-no-gui' # LaTeX環境のGUIなし
+cask 'drawio' # 図を作る時のやつ
+cask 'google-drive' # お絵描きフォルダとかの設定用のドライブ
+cask 'utm' # Ubuntuとかの仮装マシン
+cask 'raycast' # Warpとかのショートカットキーを設定
+cask 'warp' # 普段使ってるターミナル
+cask 'rubymine' # Ruby on Rails用のIDE
+cask 'hammerspoon' # MacOSをluaスクリプトで自動化
+cask 'discord' # チャットツール
+cask 'arc' # 愛用ブラウザ
+cask 'cursor' # AI IDE
 
 ### Homebrew
-brew "mas" # Mac App Store command-line interface
-brew "python" # Python 言語
-brew "python-tk" # Python interface to Tcl/Tkcask
-brew "rbenv"
-brew "ruby-build"
-brew "sqlite3"
-brew "git"
-brew "tree"
-brew "yarn"
-brew "mariadb"
-brew "inetutils"
-brew "rbenv"
-brew "ruby-build"
-### mas
+brew 'mas' # Mac App Store command-line interface
+brew 'git' # CLIでgitを実行するよう
+brew 'tree' # ディレクトリ構造見るコマンド
+brew 'inetutils' # ftp,ping,ifconfig等
+brew 'mise' # 言語のバージョン管理ツール
