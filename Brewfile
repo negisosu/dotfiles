@@ -22,7 +22,7 @@ cask 'cursor' # AI IDE
 cask 'appcleaner' # アプリ消す用
 cask 'onedrive' # 言わずもがなクラウドファイルのonedrive
 cask 'docker-desktop' # docker
-cask 'notunes'
+cask 'notunes' # MacbookでBluetoothイヤホン接続したりするときにitunesが勝手に起動するのがうざすぎて入れたやつ
 
 ### Homebrew
 brew 'mas' # Mac App Store command-line interface
@@ -32,5 +32,6 @@ brew 'inetutils' # ftp,ping,ifconfig等
 brew 'mise' # 言語のバージョン管理ツール
 brew 'marp-cli' # Markdownでのスライド作成
 brew 'jq' # grepみたいにパイプで指定するとjsonを整形してくれる
-brew 'ghq'
-brew 'peco'
+brew 'ghq' # リポジトリ管理できるやつ
+brew 'peco' # リポジトリ管理の関数動かすのに必要
+brew 'orbstack' # Docker for desktopより軽いやつ
